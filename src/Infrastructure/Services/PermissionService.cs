@@ -51,7 +51,7 @@ namespace SecurityApi.Infrastructure.Services
             }
         }
 
-        public async Task<AppResponseBase> ModifyPermission(PermissionRequest request)
+        public async Task<IAppResponseBase<PermissionDto>> ModifyPermission(PermissionRequest request)
         {
             try
             {
@@ -59,11 +59,11 @@ namespace SecurityApi.Infrastructure.Services
 
                 await _repository.ModifyAsync(entity);
 
-                return new AppResponseBase { Success = true, Data = entity };
+                return new AppResponseBase<PermissionDto> { Success = true, Data = _mapper.Map<PermissionDto>(entity) };
             }
             catch (Exception ex)
             {
-                return new AppResponseBase { Success = false };
+                return new AppResponseBase<PermissionDto> { Success = false };
             }
             finally
             {
@@ -71,7 +71,7 @@ namespace SecurityApi.Infrastructure.Services
             }
         }
 
-        public async Task<AppResponseBase> RequestPermission(PermissionRequest request)
+        public async Task<IAppResponseBase<PermissionDto>> RequestPermission(PermissionRequest request)
         {
             try
             {
@@ -79,11 +79,11 @@ namespace SecurityApi.Infrastructure.Services
 
                 var entityCreated = await _repository.CreateAsync(entity);
 
-                return new AppResponseBase { Success = true, Data = entityCreated };
+                return new AppResponseBase<PermissionDto> { Success = true, Data = _mapper.Map<PermissionDto>(entityCreated) };
             }
             catch (Exception ex)
             {
-                return new AppResponseBase { Success = false };
+                return new AppResponseBase<PermissionDto> { Success = false };
             }
             finally
             {

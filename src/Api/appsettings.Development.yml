@@ -1,4 +1,2 @@
-DataAccessRegistry:
-  ReadOnlyConnection: "Data Source=.\\SQLExpress;Initial Catalog=OPERACIONES_UNI;Persist Security Info=True;User ID=User_Operaciones_Uni_desa;Password=SDlqtFq7kZXLK1dQ18wN;TrustServerCertificate=True"
-  TransactionalConnection: "Data Source=.\\SQLExpress;Initial Catalog=OPERACIONES_UNI;Persist Security Info=True;User ID=User_Operaciones_Uni_desa;Password=SDlqtFq7kZXLK1dQ18wN;TrustServerCertificate=True"
-  ProviderName: System.Data.SqlClient
+ConnectionStrings: 
+  AppDbContext: "Data Source=.\\SQLExpress;Initial Catalog=OPERACIONES_UNI;Persist Security Info=True;User ID=User_Operaciones_Uni_desa;Password=SDlqtFq7kZXLK1dQ18wN;TrustServerCertificate=True"

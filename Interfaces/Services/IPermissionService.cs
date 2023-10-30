@@ -6,9 +6,9 @@ namespace SecurityApi.Interfaces.Services
 {
     public interface IPermissionService
     {
-        Task<AppResponseBase> RequestPermission(PermissionRequest request);
+        Task<IAppResponseBase<PermissionDto>> RequestPermission(PermissionRequest request);
 
-        Task<AppResponseBase> ModifyPermission(PermissionRequest request);
+        Task<IAppResponseBase<PermissionDto>> ModifyPermission(PermissionRequest request);
 
         Task<IAppResponseBase<List<PermissionDto>>> GetPermissions(PermissionRequest request);
     }

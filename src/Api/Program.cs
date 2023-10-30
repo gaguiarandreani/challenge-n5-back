@@ -8,7 +8,6 @@ using System.Linq;
 using SecurityApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddControllers(options =>
 {
     var jsonInputFormatter = options.InputFormatters
@@ -20,7 +19,7 @@ builder.Services.AddControllers(options =>
 
 builder.Services.AddHealthChecks();
 builder.Services.AddApplication();
-builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<IElasticClient>(s =>

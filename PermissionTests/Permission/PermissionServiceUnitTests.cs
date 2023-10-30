@@ -17,7 +17,7 @@ namespace PermissionTests.Permission
         [Fact]
         public async void GetPermissions_HappyPathWorks()
         {
-            var ITEM_ID = 1;
+            const int ITEM_ID = 1;
 
             var elastic = new Mock<IElasticClient>();
             var repository = new Mock<IPermissionRepository>();
@@ -99,7 +99,7 @@ namespace PermissionTests.Permission
             var response = await service.RequestPermission(new PermissionRequest { Permission = permissionDto });
 
             Assert.True(response.Success);
-            Assert.Equal(ITEM_ID, (response.Data as SecurityApi.Domain.Entities.Permission).Id);
+            Assert.Equal(ITEM_ID, response.Data.Id);
         }
 
         [Fact]
@@ -148,7 +148,7 @@ namespace PermissionTests.Permission
             var response = await service.ModifyPermission(new PermissionRequest { Permission = permissionDto });
 
             Assert.True(response.Success);
-            Assert.Equal(ITEM_ID, (response.Data as SecurityApi.Domain.Entities.Permission).Id);
+            Assert.Equal(ITEM_ID, response.Data.Id);
         }
     }
 }

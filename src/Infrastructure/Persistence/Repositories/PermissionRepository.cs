@@ -8,7 +8,7 @@ namespace SecurityApi.Infrastructure.Persistence.Repositories
 {
     public class PermissionRepository : BaseRepository<Permission>, IPermissionRepository
     {
-        public PermissionRepository(AppDbContext dbcontext) : base(dbcontext)
+        public PermissionRepository(AppDbContextOptionsBuilder builder) : base(builder)
         {
         }
 
