@@ -13,13 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{F9C9F69B-1037-4517-A958-29D4517DF0B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{0A7B1EFE-50D4-4CF9-BB3E-78F4C7F114EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "src\Interfaces\Interfaces.csproj", "{0A7B1EFE-50D4-4CF9-BB3E-78F4C7F114EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producers", "Producers\Producers.csproj", "{7EB2D115-32B8-4951-A019-0305E3AA183E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Producers", "src\Producers\Producers.csproj", "{7EB2D115-32B8-4951-A019-0305E3AA183E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{79D9BA0D-E27A-4871-9C05-97047BD4CB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermissionTests", "PermissionTests\PermissionTests.csproj", "{A26119FD-6545-4F87-9134-34EA191BBA57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermissionTests", "test\PermissionTests\PermissionTests.csproj", "{A26119FD-6545-4F87-9134-34EA191BBA57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

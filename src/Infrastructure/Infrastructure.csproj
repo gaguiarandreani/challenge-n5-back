@@ -29,9 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Interfaces\Interfaces.csproj" />
-    <ProjectReference Include="..\..\Producers\Producers.csproj" />
     <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
+    <ProjectReference Include="..\Producers\Producers.csproj" />
   </ItemGroup>
 
 </Project>
