@@ -33,7 +33,13 @@ builder.Services.AddSingleton<IElasticClient>(s =>
 var app = builder.Build();
 
 app.MapControllers();
-app.UseCors();
+app.UseCors(options =>
+{
+    options
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+});
 app.UseMiddleware<ExceptionMiddleware>();
 
 app.Run();

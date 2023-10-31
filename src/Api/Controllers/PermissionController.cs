@@ -15,7 +15,7 @@ public class PermissionController : ApiControllerBase
     [HttpPost]
     public Task<IActionResult> RequestPermission([FromBody] RequestPermissionCommand request) => PerformAction(request);
 
-    [HttpPut]
+    [HttpPut("{id}")]
     public Task<IActionResult> ModifyPermission([FromBody] ModifyPermissionCommand request) => PerformAction(request);
 
     [HttpGet]
