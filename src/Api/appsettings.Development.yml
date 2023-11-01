@@ -1,2 +1,2 @@
 ConnectionStrings: 
-  AppDbContext: "Data Source=.\\SQLExpress;Initial Catalog=OPERACIONES_UNI;Persist Security Info=True;User ID=User_Operaciones_Uni_desa;Password=SDlqtFq7kZXLK1dQ18wN;TrustServerCertificate=True"
+  AppDbContext: "Data Source=DBOPRCNSUNIDESA.andreani.com.ar;Initial Catalog=OPERACIONES_UNI;Persist Security Info=True;User ID=User_Operaciones_Uni_desa;Password=SDlqtFq7kZXLK1dQ18wN;TrustServerCertificate=True"
